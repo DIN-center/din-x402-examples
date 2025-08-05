@@ -36,8 +36,8 @@ Clients are provided by external libraries and are available for the following l
 
 ## Roadmap
 
-* [ ] Ethereum-compatible JSON-RPC service
+* [x] Ethereum-compatible JSON-RPC service
 * [ ] Ethereum-compatible MCP service
 * [ ] API to list available networks and methods
-* [ ] Micro-payments (one per request)
+* [x] Micro-payments (one per request)
 * [ ] Daily access tokens for different tiers
