@@ -39,5 +39,11 @@ Clients are provided by external libraries and are available for the following l
 * [x] Ethereum-compatible JSON-RPC service
 * [ ] Ethereum-compatible MCP service
 * [ ] API to list available networks and methods
+* [ ] The rest of the DIN networks
 * [x] Micro-payments (one per request)
 * [ ] Daily access tokens for different tiers
+
+## References
+
+* [x402](https://www.x402.org/)
+* [CoinBase CodeNYC](https://www.coinbase.com/developer-platform/codenyc)
