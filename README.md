@@ -23,8 +23,6 @@ Also note that the words `stable` and `beta` shown after each network above refe
 Examples are available for the following languages:
 
 * [Go](/main.go)
-* [Python]()
-* [TypeScript]()
 
 ## Clients
 
