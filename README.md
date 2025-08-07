@@ -1,3 +1,5 @@
+<img width="1920" height="1080" alt="din x402" src="https://github.com/user-attachments/assets/c922e0ab-3fc2-4a1c-af64-1b23e072a9d4" />
+
 # DIN+x402 examples
 
 [DIN](https://din.build) is making several of our supported networks available to users without a subscription.  Instead, the networks below can be accessed by making an x402 micro-payment for each call.  This gateway is provided as a beta release and feedback from BUIDLRS is very appreciated.  Submit feedback, feature requests and bug reports by filing [issues in this repository](https://github.com/DIN-center/din-x402-examples/issues).
