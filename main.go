@@ -15,12 +15,12 @@ import (
 
 func main() {
 	const (
-		dinNetURL = "https://blast-mainnet.gateway.defura.dev.infhq.net/rpc"
-		rpcReq    = `{"jsonrpc": "2.0", "method": "eth_getBlockByNumber", "params": ["latest", false], "id": 1}`
+		dinGatewayURL = "https://ethereum-mainnet.gateway.din.dev/rpc"
+		rpcReq        = `{"jsonrpc": "2.0", "method": "eth_getBlockByNumber", "params": ["latest", false], "id": 1}`
 	)
 
 	log := slog.New(tint.NewHandler(os.Stderr, &tint.Options{
-		// Level: slog.LevelDebug,
+		Level: slog.LevelDebug,
 	}))
 
 	privHex, ok := os.LookupEnv("X402_BUYER_PRIVATE_KEY")
@@ -47,7 +47,7 @@ func main() {
 
 	log.Info("DIN Request:", slog.String("body", rpcReq))
 
-	resp, err := client.Post(dinNetURL, "application/json", bytes.NewReader([]byte(rpcReq)))
+	resp, err := client.Post(dinGatewayURL, "application/json", bytes.NewReader([]byte(rpcReq)))
 	if err != nil {
 		log.Error("Failed to send DIN request", tint.Err(err))
 		os.Exit(1)
@@ -62,7 +62,7 @@ func main() {
 	}
 
 	if resp.StatusCode != 200 {
-		log.Error("Unexpected HTTP status code", slog.Int("code", resp.StatusCode))
+		log.Error("Unexpected HTTP status code", slog.String("body", string(body)), slog.Int("code", resp.StatusCode))
 		os.Exit(1)
 	}
 
