@@ -61,7 +61,7 @@ python main.py
 
 Clients are provided by external libraries and are available for the following languages:
 
-* [Go](github.com/selesy/x402-buyer)
+* [Go](https://github.com/selesy/x402-buyer)
 * [Java](https://github.com/coinbase/x402/tree/main/java/src/main/java/com/coinbase/x402/client)
 * [Python](https://github.com/coinbase/x402/tree/main/python/x402/src/x402/clients)
 * [Rust](https://github.com/x402-rs/x402-rs/tree/b13a4714432ae3421b0421c61103e5a57f8b5d38/crates/x402-reqwest)
