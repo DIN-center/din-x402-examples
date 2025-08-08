@@ -23,6 +23,24 @@ Also note that the words `stable` and `beta` shown after each network above refe
 Examples are available for the following languages:
 
 * [Go](/main.go)
+* [Python](/main.py)
+
+### Python
+
+To run the Python example, first create a virtual environment and install the dependencies:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Then, set the `X402_BUYER_PRIVATE_KEY` environment variable and run the script:
+
+```bash
+export X402_BUYER_PRIVATE_KEY=<your_private_key>
+python main.py
+```
 
 ## Clients
 

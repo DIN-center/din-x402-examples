@@ -1,0 +1,4 @@
+x402
+eth_account
+python-dotenv
+httpx
