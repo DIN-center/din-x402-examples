@@ -18,6 +18,14 @@ Crypto-currency networks are specified as specific sub-domains on the DIN gatewa
 
 Also note that the words `stable` and `beta` shown after each network above refer to the quality of the network connection available through DIN.
 
+## Pricing
+
+The DIN gateway charges Base USDC for each Ethereum method that is called in accordance with the [INFURA credit cost tables](https://docs.metamask.io/services/get-started/pricing/credit-cost/).  The cost per credit is four (4) micro-ethers, which results in per-method costs that are approximately the same as [INFURA's Developer plan](https://docs.metamask.io/services/get-started/pricing/#infura-plans). For batched requests, the cost charged for the batch will be the sum of the credit costs of the individual method calls included in the batch.
+
+## Performance
+
+For applications where request-response latency is sensitive, micro-payments can be slower than desired.  The long term solution to this issue is to sell bearer tokens via x402 which can then be sent in the `Authorization` header to bypass the extra buyer-to-seller call as well as the two calls from the seller to the facilitator.  One existing strategy to increase the overall throughput of the system is to send batches of JSON-RPC requests as described in the [JSON-RPC 2.0 Specification](https://www.jsonrpc.org/specification#batch).
+
 ## Examples
 
 Examples are available for the following languages:
