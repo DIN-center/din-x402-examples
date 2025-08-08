@@ -25,6 +25,21 @@ Examples are available for the following languages:
 * [Go](/main.go)
 * [Python](/main.py)
 
+### Go
+
+To run the Go example, first ensure the dependencies are up to date:
+
+```bash
+go mod tidy
+```
+
+Then, set the `X402_BUYER_PRIVATE_KEY` environment variable and run the script:
+
+```bash
+export X402_BUYER_PRIVATE_KEY=<your_private_key>
+go run main.go
+```
+
 ### Python
 
 To run the Python example, first create a virtual environment and install the dependencies:
