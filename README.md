@@ -24,6 +24,7 @@ Examples are available for the following languages:
 
 * [Go](/main.go)
 * [Python](/main.py)
+* [TypeScript](/main.ts)
 
 ### Go
 
@@ -55,6 +56,21 @@ Then, set the `X402_BUYER_PRIVATE_KEY` environment variable and run the script:
 ```bash
 export X402_BUYER_PRIVATE_KEY=<your_private_key>
 python main.py
+```
+
+### TypeScript
+
+To run the TypeScript example, first install the dependencies:
+
+```bash
+npm install
+```
+
+Then, set the `X402_BUYER_PRIVATE_KEY` environment variable and run the script:
+
+```bash
+export X402_BUYER_PRIVATE_KEY=<your_private_key>
+npm start
 ```
 
 ## Clients

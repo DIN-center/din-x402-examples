@@ -1,0 +1,24 @@
+{
+  "name": "din-x402-examples",
+  "version": "1.0.0",
+  "description": "Examples for using the DIN x402 gateway",
+  "type": "module",
+  "main": "main.ts",
+  "scripts": {
+    "start": "node --loader ts-node/esm main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2",
+    "ethers": "^6.13.1",
+    "dotenv": "^16.4.5",
+    "viem": "^2.17.3",
+    "x402-fetch": "^0.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9"
+  }
+}
