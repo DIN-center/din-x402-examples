@@ -69,6 +69,8 @@ Clients are provided by external libraries and are available for the following l
 
 ## Roadmap
 
+The following feature list is a very rough roadmap for the DIN gateway.  We'll be building more features and expanding this product after the code nyc hackathon. If you'd like to provide feedback or work with us, send us an email to din@consensys.net or post your thoughts to the [discussions in this repository](https://github.com/DIN-center/din-x402-examples/discussions).
+
 * [x] Ethereum-compatible JSON-RPC service
 * [ ] Ethereum-compatible MCP service
 * [ ] API to list available networks and methods
@@ -78,5 +80,6 @@ Clients are provided by external libraries and are available for the following l
 
 ## References
 
+* [DIN](https://din.build/)
 * [x402](https://www.x402.org/)
 * [CoinBase CodeNYC](https://www.coinbase.com/developer-platform/codenyc)
